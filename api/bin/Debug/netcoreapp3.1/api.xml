@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>api</name>
+    </assembly>
+    <members>
+        <member name="M:api.Controllers.CasesController.PutLegalCase(System.Int64,System.String)">
+            <summary>
+            Add a case to a folder
+            </summary>
+        </member>
+        <member name="M:api.Controllers.CasesController.DeleteLegalCase(System.Int64,System.String)">
+            <summary>
+            Remove a case from a folder
+            </summary>
+        </member>
+        <member name="M:api.Controllers.FoldersController.PutFolder(System.Int64,api.Models.FolderForUpdateDTO)">
+            <summary>
+            Update a folder. Leaves contained cases unchanged.
+            </summary>
+        </member>
+        <member name="M:api.Entities.LegalCase.IsValidCaseId(System.String)">
+            <remarks>Insulates clients from changes to the CaseId format</remarks>
+        </member>
+        <member name="T:api.Entities.Seeder">
+            <summary>
+            Used to seed some test data for the development environment
+            </summary>
+        </member>
+        <member name="T:api.Models.CaseIdAttribute">
+            <summary>
+            Validates that a property is valid as a CaseId. Applies to string or List of string 
+            </summary> 
+            <remarks>Insulates clients from changes to the CaseId format</remarks>
+        </member>
+        <member name="T:api.Models.DTOMapper">
+            <summary>
+            Helper for mapping between entities and view models (DTOs)
+            </summary>
+        </member>
+    </members>
+</doc>
